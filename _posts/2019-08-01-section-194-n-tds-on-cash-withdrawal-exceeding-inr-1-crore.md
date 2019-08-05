@@ -10,7 +10,7 @@ layout: post
 author: shan
 image: https://i.ibb.co/tLVDDX1/Tds.jpg
 description: SECTION 194-N INTRODUCTIONThe ambitious mission of government of India to drive India towards a cashless economy was boosted with the announcement of demonetization.
-featured: true
+featured: false
 hidden: false
 comments: true
 ---

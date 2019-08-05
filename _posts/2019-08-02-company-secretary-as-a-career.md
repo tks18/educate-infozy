@@ -10,7 +10,7 @@ layout: post
 author: shan
 image: https://i.ibb.co/ZGBK0jF/Jan-9.jpg
 description: Server means a person or thing that serves. Another meaning of server is that a computer or computer program which manages access to a centralized resources.
-featured: true
+featured: false
 hidden: false
 comments: true
 ---
