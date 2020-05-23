@@ -47,7 +47,7 @@ collections:
             name: "image"
             widget: "image"
             hint: "Upload Image"
-        required: true
+        required: false
         hint: "Give Source Image Url or Upload the Image !Important - Select only One Option"
       - label: "Body"
         name: "body"
@@ -121,7 +121,7 @@ collections:
                 name: "logo"
                 widget: "image"
                 hint: "Upload Image"
-            required: true
+            required: false
             hint: "Give Source Image Url or Upload the Image !Important - Select only One Option"
           - label: "Disqus Username"
             name: "disqus"
