@@ -126,6 +126,9 @@
                 <a class="nav-link" href="{{ site.siteurl }}">Blog</a>
                 </li>
                 <li class="nav-item">
+                <a class="nav-link" href="https://educate-infozy.netlify.app/admin/">Admin Panel</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="{{ site.group-url }}" target="_blank">{{ site.group }}</a>
                 </li>
 
@@ -215,12 +218,22 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.title }} | {{site.group}} 
+            <div class="col-md-12 col-sm-12 text-center footer-size-text text-lg-center">    
+                <span><a href="/sitemap.xml"> SiteMap </a>&nbsp; | &nbsp;<a href="/feed.xml"> RSS Feed </a> &nbsp;|&nbsp; <a href="https://dopetrope.tk/privacypolicy"> Privacy Policy </a> &nbsp;|&nbsp; <a href="https://dopetrope.tk/cookiepolicy"> Cookie Policy </a> &nbsp;|&nbsp; <a href="https://dopetrope.tk/license" target="_blank"> License </a></span>
             </div>
-            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://students.focuspocus.tk">Info-Grad</a> | <a href="https://focuspocus.tk" target="_blank" title="Infozy's Portal">Infozy Infotainment Group</a> by<a href="https://github.com/tks18" target="_blank" title="Github Repo"> TK Sudharshan</a>.
-            </div> -->
+            <div class="col-md-12 col-sm-12 text-center footer-size-text text-lg-center">    
+                Site last Updated on - <span><b>{{ "now" | date:"%a, %b %d, %H:%M %P" }}</b></span>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center footer-size-text text-lg-center">    
+                  <span><b>Educate</b> is a Part of <a href="https://infozy.tk" target="_blank"><b>Infozy Group</b></a>.</span>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center footer-size-text text-lg-center">    
+                <span>Please Review Our <a href="https://dopetrope.tk/privacypolicy" target="_blank"> Privacy Policy</a> and <a href="https://dopetrope.tk/cookiepolicy" target="_blank"> Cookie Policy </a> for How we Process User Data.
+                </span>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center footer-size-text text-lg-center">    
+                <span><b>{{ site.time | date: "%Y" }} | {{ site.title }}</b></span>
+            </div>
         </div>
     </div>
 </footer>
