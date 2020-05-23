@@ -1,69 +1,18 @@
-# Site
-name: "Educate"
-subtitle: "Learn Something New"
-siteurl: "https://educate.infozy.tk"
-group: "Infozy"
-group-url: "https://infozy.tk"
-title: "Educate"
-logo: "/assets/images/logo.png"
-description: "Educate from Infozy provides latest News, Articles, Editorials etc for Ca Students."
-analytics: 'UA-156929545-1'
-disqus: 'read-write-tech'
-include: ["_pages"]
-permalink: /:title/
-
-# Authors
-authors:
-  shan:
-    name: TK Sudharshan
-    display_name: Shan.tk
-    avatar: 'https://s.gravatar.com/avatar/c0ec2e063895760baa493c36d2d28387?s=400'
-    email: tksudharshan@infozy.tk
-    web: https://shan.infozy.tk
-    description: "CA Finalist | Android App Developer | Web Developer | Android Debugger<br />Working in Ford Rhodes Parks
-  & Co LLP as a Article Assistant."
-
-# Image Configurations
-
-cdn: https://cdn.statically.io/img/
-image: educate.infozy.tk/assets/images/
-height_thumbnail: 580
-width_thumbnail: 920
-height_post: 1080
-width_post: 1920
-width_home_featured_thumbnail: 720
-height_home_featured_thumbnail: 960
-auto_webp_conversion: true
-
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-archives
-    
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
-    
-# Pagination 
-paginate: 8
-paginate_path: /page:num/
-    
-# Other
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
-
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, .gitignore]
+name: x
+title: x
+subtitle: x
+group: x
+group-url: x
+description: x
+logo:
+  logo: /assets/images/posts/talles-alves-hnwvjxncaos-unsplash.jpg
+height_thumbnail: x
+width_thumbnail: x
+height_post: x
+width_post: x
+width_home_featured_thumbnail: x
+height_home_featured_thumbnail: x
+auto_webp_conversion: false
+lazyimages: enabled
+baseurl: x
+siteurl: x
