@@ -247,6 +247,17 @@
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function(user) {
+            if (!user) {
+                window.netlifyIdentity.on("login", function() {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+    </script>
 
 </body>
 </html>
