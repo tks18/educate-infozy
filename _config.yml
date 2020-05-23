@@ -15,7 +15,7 @@ permalink: /:title/
 # Authors
 authors:
   shan:
-    name: TK Sudharshan
+    name: Sudharshan TK
     display_name: Shan.tk
     avatar: 'https://s.gravatar.com/avatar/c0ec2e063895760baa493c36d2d28387?s=400'
     email: tksudharshan@infozy.tk
@@ -67,3 +67,4 @@ kramdown:
 lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, .gitignore]
+timezone: Asia/Kolkata
