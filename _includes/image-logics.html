@@ -1,0 +1,76 @@
+{% assign page_image = '' %}
+{% if site.auto_webp_conversion %}
+	{% if page.image %}
+		{% if page.image contains "https://" %}
+            {% assign page_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
+        {% else %}
+            {% assign page_image = page.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% if page.image %}
+        {% if page.image contains "https://" %}
+            {% assign page_image = page.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
+        {% else %}
+            {% assign page_image = page.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+
+
+{% assign post_image = '' %}
+{% if site.auto_webp_conversion %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
+        {% else %}
+            {% assign post_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post | append: "&f=auto" %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign post_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_post | append: "&h=" | append: site.height_post %}
+        {% else %}
+            {% assign post_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.widt_thumbnail | append: "&h=" | append: site.height_post %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+
+{% assign featured_image = '' %}
+{% if site.auto_webp_conversion %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign featured_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_home_featured_thumbnail | append: "&h=" | append: site.height_home_featured_thumbnail | append: "&f=auto" %}
+        {% else %}
+            {% assign featured_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_home_featured_thumbnail | append: "&h=" | append: site.height_home_featured_thumbnail | append: "&f=auto" %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign featured_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_home_featured_thumbnail | append: "&h=" | append: site.height_home_featured_thumbnail %}
+        {% else %}
+            {% assign featured_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_home_featured_thumbnail | append: "&h=" | append: site.height_home_featured_thumbnail %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+
+{% assign home_image = '' %}
+{% if site.auto_webp_conversion %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign home_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
+        {% else %}
+            {% assign home_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail | append: "&f=auto" %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% if post.image %}
+        {% if post.image contains "https://" %}
+            {% assign home_image = post.image | remove: "https://" | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
+        {% else %}
+            {% assign home_image = post.image | remove: "educate.infozy.tk/assets/images/" | prepend: site.image | prepend: site.cdn | append: "?w=" | append: site.width_thumbnail | append: "&h=" | append: site.height_thumbnail %}
+        {% endif %}
+    {% endif %}
+{% endif %}
