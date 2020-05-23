@@ -1,0 +1,30 @@
+---
+layout: null
+---
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": {{ site.title | jsonify }},
+  "home_page_url": "{{ site.url }}/",
+  "feed_url": "{{ site.url }}/feed.json",
+  "description": {{ site.tagline | jsonify }},
+  "favicon": "{{ site.url }}/assets/img/icons/favicon-96x96.png",
+  "icon": "{{ site.url }}/assets/icons/apple-touch-icon-114x114.png",
+  "author": {
+      "name": {{ site.maintainer | jsonify }},
+      "url": "{{ site.url }}/",
+  },
+  "expired": "false",
+   "items": [
+   	{% for post in site.posts limit:15 %}
+    {
+      "id": {{ post.date | date: "%d%y%H%M" | jsonify }},
+      "url": "{{ site.url }}{{ post.url }}",
+      "title": {{ post.title | jsonify }},
+      "content_html": {{ post.content | jsonify }},
+      {% if post.description %}"summary": {{ post.description  | jsonify }},{% endif %}
+      {% if post.tags %}"tags":  [ "{{post.tags | join: '","'}}" ],{% endif %}
+      "date_published": "{{ post.date | date:"%a, %b %d, %H:%M %P" | date_to_xmlschema }}"
+    }{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+  ]
+}
